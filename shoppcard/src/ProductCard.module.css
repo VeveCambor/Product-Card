@@ -1,0 +1,101 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.productPhoto {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  border-radius: 4px;
+}
+
+.wrapper h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.price {
+  font-weight: 700;
+}
+
+/* BUTTON */
+button {
+  background:  var(--primary-color);
+  font-size: 1rem;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 15px 30px 15px 30px;
+}
+
+button:hover {
+ background: rgb(57, 63, 72);
+}
+
+/* TITLE */
+.wrapTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.wrapTitle > div {
+  background-clip: text;  
+  -webkit-background-clip: text;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: clamp(3em, 18vw, 8rem);
+  letter-spacing: 1px;
+  -webkit-text-stroke: 4px transparent;
+}
+
+div.pageTitleTop  {
+  background-image: repeating-linear-gradient( 105deg, 
+  rgb(192,192,192) 0% , 
+  rgb(62, 41, 4),
+  rgb(192,192,192) 12%);
+  color: transparent;
+  filter: drop-shadow(5px 15px 15px rgb(2, 2, 2));
+  transform: scaleY(1.05);
+  transform-origin: top;
+}
+
+div.pageTitle{
+  background-image: repeating-linear-gradient( 5deg,  
+  rgb(192,192,192) 0% , 
+  rgb(120, 88, 28) 23%, 
+  rgb(192,192,192) 31%);
+  color: rgb(26, 30, 38);
+  transform: scale(1);
+}
+
+@media (max-width: 1890px) {
+  .wrapTitle {
+    margin-top: 1rem;
+  }  
+  .productPhoto {
+    width: 50%;
+  }
+}
+
+@media (max-width: 900px) {
+  .productPhoto {
+    width: 50%;
+  }
+  .wrapTitle {
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapTitle > div {
+    font-size: clamp(2.5em, 15vw, 8rem);
+    -webkit-text-stroke: 2px transparent;
+    text-align: center;
+  }
+}
