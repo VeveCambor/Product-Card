@@ -7,4 +7,8 @@ První úkol do adventní soutěž s React Girls ve spolupráci s Lenovo.
 - Nakóduj produktovou kartičku pro e-shop, kde bude minimálně fotka, popis produktu, tlačítko na přidání do košíku
 - Vytvoř responzivní design, který bude dobře vypadat na různých zařízeních
 
+## Náhled:
+https://vevecambor.github.io/Product-Card/
+
+
 (Tato stránka neslouží k žádnému komerčnímu účelu. Obrázky a texty jsou převzaté z oficiálních stránek Lenovo)
